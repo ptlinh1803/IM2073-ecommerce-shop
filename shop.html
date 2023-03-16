@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Supplies - Shop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADER---------------------------------------------->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <!--logo-->
+
+        <!--nav bar-->
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header">
+
+        <h2>The best of goods only!</h2>
+
+        <p>Browse through our catatalogue and pick any product you like</p>
+
+    </section>
+
+    <!--SEARCH AND FILTER------------------------------------>
+    <section id="search">
+        <form method="get" action="search-product" class="search-bar">
+            <input type="text" placeholder="Search for watercolors, acrylic paints & more" name="searchproduct">
+            <button type="submit" id="searchBtn"><b>Go!</b></button> 
+            <!-- <a href="#"><strong>Go!</strong></a>-->
+        </form>
+    </section>
+
+    <section id="filter-and-sort">
+        <span>Filter by:</span>
+        <select id="product-type-filter">
+            <option value="">--Choose a product type--</option>
+            <option value="Watercolor"><a href="#">Watercolor</a></option>
+            <option value="Acrylic"><a href="#">Acrylic</a></option>
+            <option value="Colored pencils"><a href="#">Colored pencils</a></option>
+            <option value="Markers"><a href="#">Markers</a></option>
+            <option value="Soft pastels"><a href="#">Soft pastels</a></option>
+            <option value="Crayons"><a href="#">Crayons</a></option>
+        </select>
+        <select id="brand-filter">
+            <option value="">--Choose a brand--</option>
+            <option value="Artecho"><a href="#">Artecho</a></option>
+            <option value="Crayola"><a href="#">Crayola</a></option>
+            <option value="Derwent"><a href="#">Derwent</a></option>
+            <option value="Faber-Castell"><a href="#">Faber-Castell</a></option>
+            <option value="HissiCo"><a href="#">HissiCo</a></option>
+            <option value="Mont Marte"><a href="#">Mont Marte</a></option>
+            <option value="Mungyo"><a href="#">Mungyo</a></option>
+            <option value="Ohuhu"><a href="#">Ohuhu</a></option>
+            <option value="Posca"><a href="#">Posca</a></option>
+            <option value="PRISMACOLOR"><a href="#">PRISMACOLOR</a></option>
+            <option value="Staedtler"><a href="#">Staedtler</a></option>
+            <option value="Studio Series"><a href="#">Studio Series</a></option>
+            <option value="Winsor & Newton"><a href="#">Winsor & Newton</a></option>
+        </select>
+        <select id="price-range-filter">
+            <option value="">--Choose a price range--</option>
+            <option value="0-10">$0 - $10</option>
+            <option value="10-50">$10 - $50</option>
+            <option value="50-100">$50 - $100</option>
+        </select>
+    </section>
+
+    <!--DISPLAY ALL PRODUCTS--------------------------------->
+    <section id="product1" class="section-p1">
+    <!--Display the products from MySQL database-->
+    </section>
+
+    <!--FOOTER----------------------------------------------->
+    <footer class="section-p1">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> School of Electrical Electronic Engineering, Nanyang Technological University, 50 Nanyang Ave, Singapore 639798</p>
+        <p><strong>Phone:</strong> +65 9104 4945 /+65 8351 0591</p>
+        <p><strong>Email:</strong> thuylinh001@e.ntu.edu.sg, huunghia002@e.ntu.edu.sg</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Linh & Nghia - IEM Y2 NTU - IM2073 project</p>
+        </div>
+    </footer>
+
+    <script src="displayallproducts.js"></script>
+    <script src="displaysearch.js"></script>
+    <script src="filterproducts.js"></script>
+    <script defer src="addtocart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Supplies - Home</title> <!--Website title-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> <!--font awesome icon-->
+    <link rel="stylesheet" href="style.css"> <!--link css file-->
+</head>
+
+<body onload="loadFeaturedProducts()">
+
+    <!--HEADER---------------------------------------------->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <!--logo-->
+
+        <!--nav bar-->
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <!--BACKGROUND after header----------------------------->
+    <section id="hero">
+        <h4>Welcome to</h4>
+        <h2>#1 art supplies shop in Singapore</h2>
+        <h1>Inspire Supplies</h1>
+        <p>Find everything you need here, artists! </p>
+        <button class="white"><a href="shop.html">Shop Now</a></button>
+    </section>
+
+    <!--FEATURES-------------------------------------------->
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Watercolor</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Acrylic</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Colored pencils</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Markers</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Soft pastels</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>Crayons</h6>
+        </div>
+    </section>
+
+    
+    <section id="product1" class="section-p1">
+        <!--FEATURED PRODUCTS--------------------------------->
+        <!------Display the products from MySQL database------->
+    </section>
+    
+
+    <!--BANNERS--------------------------------------------->
+    <section id="banner" class="section-m1">
+        <h4>Trusted by many artists </h4>
+        <h2>Shop from <span>famous brands</span> – All in one place</h2> <!--put in span tag to have a different color-->
+    </section>
+
+    <!--SOME MORE BANNERS----------------------------------->
+    <section id="sm-banner" class="section-p1">
+        <div class="banner-box">
+            <h4>New collection</h4>
+            <h2>Faber-Castell</h2>
+            <span>Explore the newest products of this famous brand</span>
+            <button class="white"><a href="shop.html">Shop Now</a></button>
+        </div>
+        <div class="banner-box banner-box2">
+            <h4>Best products</h4>
+            <h2>Watercolor</h2>
+            <span>Explore highly-recommended watercolor brands</span>
+            <button class="white"><a href="shop.html">Shop Now</a></button>
+        </div>
+    </section>
+
+    <!--FOOTER----------------------------------------------->
+    <footer class="section-p1">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> School of Electrical Electronic Engineering, Nanyang Technological University, 50 Nanyang Ave, Singapore 639798</p>
+        <p><strong>Phone:</strong> +65 9104 4945 /+65 8351 0591</p>
+        <p><strong>Email:</strong> thuylinh001@e.ntu.edu.sg, huunghia002@e.ntu.edu.sg</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Linh & Nghia - IEM Y2 NTU - IM2073 project</p>
+        </div>
+    </footer>
+    <script src="displayfeatureproduct.js"></script>
+    <script src="addtocart.js"></script>
+    <script src="signupsuccess.js"></script>
+    <script src="script.js"></script> <!--link java script file-->
+</body>
+
+</html>

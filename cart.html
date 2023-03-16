@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Supplies - Cart</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--HEADER---------------------------------------------->
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+
+        <h2>Your cart</h2>
+        <p>Check the QUANTITY and SUBTOTAL of each product carefully before checkout</p>
+
+    </section>
+
+    <!--CART TABLE------------------------------------------>
+    <section id="cart" class="section-p1">
+        <table id="product-table" width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+
+            <tbody id="table-body">
+                <!--TABLE BODY: display all the products that are currently in the "cart" table from MySQL-->
+            </tbody>
+        </table>
+    </section>
+
+    <!--CHECKOUT------------------------------------------>
+    <section id="cart-add" class="section-p1">
+        <!--COUPON
+        <div id="cuopon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" name="" id="" placeholder="Enter Your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        -->
+        <form id="cart-form" method="post" action="add-user">
+            <div id="delivery-info">
+                <h3>Complete Your Order Details:</h3>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="cart-name" id="" placeholder="Enter Your Name" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone Number:</td>
+                        <td><input type="text" name="cart-phone-no" id="" placeholder="Enter Your Phone No." required></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" name="cart-address" id="" placeholder="Enter Your Address" required></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="cart-email" id="" placeholder="Enter Your Email" required></td>
+                    </tr>
+                </table>
+                <button type="submit" class="normal">Submit</button>
+            </div>
+        </form>
+        <!--TOTAL-->
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong></strong></td>
+                </tr>
+            </table>
+            <button id="checkout-btn" class="normal" onclick="SuccessfulOrder()">Proceed to checkout</button>
+        </div>
+    </section>
+
+    <!--FOOTER----------------------------------------------->
+    <footer class="section-p1">
+        <img class="logo" src="img/logo.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address: </strong> School of Electrical Electronic Engineering, Nanyang Technological University, 50 Nanyang Ave, Singapore 639798</p>
+        <p><strong>Phone:</strong> +65 9104 4945 /+65 8351 0591</p>
+        <p><strong>Email:</strong> thuylinh001@e.ntu.edu.sg, huunghia002@e.ntu.edu.sg</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Linh & Nghia - IEM Y2 NTU - IM2073 project</p>
+        </div>
+    </footer>
+
+    <script src="displaycart.js"></script>
+    <script src="deletefromcart.js"></script>
+    <script src="adduser.js"></script>
+    <script src="updateorderdetails.js"></script>
+    <script src="successfulorder.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
