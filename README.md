@@ -2,7 +2,7 @@
 
 This is a group project for IM2073 - Introduction to Design and Project, Sem 2 AY22/23 done by 2 NTU students:
 - Pham Thuy Linh (IEM/Y2)
-- Tran Huu Nghia (EEE/Y2)
+- Tran Huu Nghia (IEM/Y2)
 
 ## Project description
 This is a full-stack e-commerce website project for an art supplies shop that provides users with an easy-to-use shopping experience. The website includes a home page, shop page, contact page, and cart page.
